@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Cart - TrendHive</title>
   <link rel="stylesheet" href="../css/cart.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
   <div class="container">
-  <a href="../index/home.html" class="back-arrow">
-    &#8592; 
-  </a>
+    <a href="../index/home.html" class="back-arrow">
+      &#8592;
+    </a>
 
-  
-  <input type="checkbox" id="toggleAddress" hidden>
- 
-  <input type="checkbox" id="popup1" hidden>
-  <input type="checkbox" id="popup2" hidden>
 
-  <div class="cart-container">
+    <input type="checkbox" id="toggleAddress" hidden>
 
-    
-    <div class="address-section">
-      <h2><i class="fas fa-map-marker-alt"></i> Delivery Address</h2>
-      <p><strong>Malar</strong>, 123 Sample Street, Chennai, Tamil Nadu - 600001</p>
-      <p>Phone: +91 9876543210</p>
-      <label for="toggleAddress" class="change-btn">Change Address</label>
+    <input type="checkbox" id="popup1" hidden>
+    <input type="checkbox" id="popup2" hidden>
 
-      <div class="address-form">
-        <input type="text" placeholder="New Address" />
-        <input type="text" placeholder="City" />
-        <input type="text" placeholder="Pin Code" />
-        <input type="text" placeholder="Phone Number" />
-        <label for="toggleAddress" class="save-btn">Save Address</label>
+    <div class="cart-container">
+
+
+      <div class="address-section">
+        <h2><i class="fas fa-map-marker-alt"></i> Delivery Address</h2>
+        <p><strong>Malar</strong>, 123 Sample Street, Chennai, Tamil Nadu - 600001</p>
+        <p>Phone: +91 9876543210</p>
+        <label for="toggleAddress" class="change-btn">Change Address</label>
+
+        <div class="address-form">
+          <input type="text" placeholder="New Address" />
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="Pin Code" />
+          <input type="text" placeholder="Phone Number" />
+          <label for="toggleAddress" class="save-btn">Save Address</label>
+
+        </div>
+      </div>
+
+
+      <div class="cart-section">
+        <h2><i class="fas fa-shopping-cart"></i> My Cart (2 Items)</h2>
+
+
+        <div class="cart-item">
+          <img src="../Images/boys shoe.jpg " alt="iPhone 13">
+          <div class="item-details">
+            <h3>Boys Shoe</h3>
+            <p> Step into style and comfort with our trendy boys' shoes.</p>
+            <p class="price">₹4,999</p>
+          </div>
+          <div class="item-actions">
+            <label for="popup1" class="order-btn">Order Now</label>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+
+        <div class="cart-item">
+          <img src="../Images/chair.jpg" alt="Earbuds">
+          <div class="item-details">
+            <h3>Chair</h3>
+            <p>Experience comfort and elegance with our premium chair design.</p>
+            <p class="price">₹1,999</p>
+          </div>
+          <div class="item-actions">
+            <label for="popup2" class="order-btn">Order Now</label>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
 
       </div>
+
+
+      <div class="order-popup popup1">
+        <div class="popup-box">
+          <h2>Confirm Your Order</h2>
+          <img src="../Images/boys shoe.jpg " alt="Ordered Product" />
+          <p><strong>Product:</strong> Shoe,Browm Color,7size</p>
+          <p><strong>Price:</strong> ₹4,999</p>
+          <p><strong>Deliver To:</strong> Malar, 123 Sample Street, Chennai</p>
+
+          <h3>Select Payment Method</h3>
+          <div class="payment-options">
+            <label><input type="radio" name="pay1" checked /> Cash on Delivery</label>
+            <label><input type="radio" name="pay1" /> Google Pay</label>
+          </div>
+
+          <a href="../index/order-confirmation.html" class="confirm-btn">Confirm Your Order</a>
+          <label for="popup1" class="cancel-btn">Cancel</label>
+        </div>
+      </div>
+
+
+
     </div>
-
-   
-    <div class="cart-section">
-      <h2><i class="fas fa-shopping-cart"></i> My Cart (2 Items)</h2>
-
-      
-      <div class="cart-item">
-        <img src="../Images/boys shoe.jpg " alt="iPhone 13">
-        <div class="item-details">
-          <h3>Boys Shoe</h3>
-          <p> Step into style and comfort with our trendy boys' shoes.</p>
-          <p class="price">₹4,999</p>
-        </div>
-        <div class="item-actions">
-          <label for="popup1" class="order-btn">Order Now</label>
-          <button class="remove-btn">Remove</button>
-        </div>
-      </div>
-
-     
-      <div class="cart-item">
-        <img src="../Images/chair.jpg" alt="Earbuds">
-        <div class="item-details">
-          <h3>Chair</h3>
-          <p>Experience comfort and elegance with our premium chair design.</p>
-          <p class="price">₹1,999</p>
-        </div>
-        <div class="item-actions">
-          <label for="popup2" class="order-btn">Order Now</label>
-          <button class="remove-btn">Remove</button>
-        </div>
-      </div>
-
-    </div>
-
-   
-    <div class="order-popup popup1">
-      <div class="popup-box">
-        <h2>Confirm Your Order</h2>
-        <img src="../Images/boys shoe.jpg " alt="Ordered Product" />
-        <p><strong>Product:</strong> Shoe,Browm Color,7size</p>
-        <p><strong>Price:</strong> ₹4,999</p>
-        <p><strong>Deliver To:</strong> Malar, 123 Sample Street, Chennai</p>
-
-        <h3>Select Payment Method</h3>
-        <div class="payment-options">
-          <label><input type="radio" name="pay1" checked /> Cash on Delivery</label>
-          <label><input type="radio" name="pay1" /> Google Pay</label>
-        </div>
-
-        <a href="../index/order-confirmation.html" class="confirm-btn">Confirm Your Order</a>
-        <label for="popup1" class="cancel-btn">Cancel</label>
-      </div>
-    </div>
-    
-       
-
-  </div>
 </body>
+
 </html>

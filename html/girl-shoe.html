@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/girl-shoe.css" />
+  <title>Table</title>
+</head>
+<body>
+  <div class="container">
+  <a href="../index/clothes.html" class="back-arrow">
+    &#8592; 
+  </a>
+
+ 
+  <input type="checkbox" id="toggle-form" hidden>
+   
+  <div class="shopa-container">
+    <div class="product-info">
+      <h1><i>GIRL SHOE</i></h1>
+      <p class="price">₹3,999</p>
+      <p class="description">Discover the latest in shoe. Sleek performance and futuristic features.</p>
+
+      <div class="ratings">
+        <h3>Customer Reviews</h3>
+        <div class="review-card">
+          <img src="../Images/user1.jpg" alt="User 1">
+          <div class="review-text">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Great product! Totally worth it.</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <img src="../Images/user1 (2).jpg" alt="User 2">
+          <div class="review-text">
+            <p>⭐⭐⭐⭐</p>
+            <p>Smooth performance and fast delivery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <label for="toggle-form" class="order-button">Order Now</label>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="order-form">
+        <label for="toggle-form" class="close-form">×</label>
+        <form action="../index/order-confirmation.html" method="GET">
+          <h3>Shipping Address</h3>
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="text" name="address" placeholder="Address" required>
+          <input type="text" name="city" placeholder="City" required>
+          <input type="text" name="pincode" placeholder="Pincode" required>
+          <button type="submit">Submit Order</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="../Images/girls shoe.jpg" alt="Tech Product" />
+    </div>
+  </div>
+</body>
+</html>
